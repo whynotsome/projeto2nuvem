@@ -15,7 +15,7 @@ app.get("/trabalhopasso1", function(req,res){
 app.get("/bemvindopersonalizado/:nomeprofessor", function(req,res){
     //req --> dados enviados pelo cliente
     //res --> resposta enviada pelo servidor de volta ao cliente
-    res.send("Bem vindo professor " + req.params.nomeprofessor);
+    res.send("Bem vindo mestre " + req.params.nomeprofessor);
 })
 
 app.listen(process.env.PORT ?? 3000,function(erro){  // cria a aplicação na porta 4000
